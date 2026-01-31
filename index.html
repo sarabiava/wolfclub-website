@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pop Show | Podcast Musicale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        popBeige: '#F7D6B5',
+                        popLavender: '#C5B5F7',
+                        popBlack: '#000000',
+                        popPink: '#F7B5C5',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        title: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .neo-brutalism-border {
+            border: 2px solid black;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
+        }
+
+        .circular-text {
+            /* Placeholder per l'effetto rotante "Listen Now" */
+            animation: spin 10s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-popBeige font-sans text-popBlack overflow-x-hidden">
+
+    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-title uppercase tracking-tighter">The Pop Show</div>
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#" class="hover:underline">Episodes</a>
+            <a href="#" class="hover:underline">The Pop Blog</a>
+        </div>
+        <button
+            class="bg-popBlack text-white px-6 py-2 rounded-lg font-bold uppercase text-sm hover:scale-105 transition">Subscribe</button>
+    </nav>
+
+    <section class="relative max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
+        <div data-aos="fade-right">
+            <h1 class="text-8xl md:text-9xl font-title uppercase leading-none mb-6">The Pop<br>Show</h1>
+            <div class="relative w-32 h-32 flex items-center justify-center">
+                <div class="circular-text absolute text-[10px] font-bold tracking-widest uppercase">
+                    • Listen Now • Listen Now • Listen Now •
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-left" class="space-y-6">
+            <h2 class="text-3xl font-bold">A Music Podcast for<br>Pop Lovers</h2>
+            <p class="text-lg max-w-md">Analizziamo le hit, la storia e i segreti della musica pop. Unisciti a Tim
+                Rickman ogni settimana.</p>
+            <button
+                class="bg-popBlack text-white w-full md:w-auto px-12 py-6 text-2xl font-title uppercase neo-brutalism-border hover:bg-white hover:text-black transition-all">
+                Listen
+            </button>
+        </div>
+    </section>
+
+    <div class="px-6 max-w-7xl mx-auto mb-20" data-aos="zoom-in">
+        <div class="h-64 md:h-[400px] w-full bg-cover bg-center neo-brutalism-border rounded-xl"
+            style="background-image: url('https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80');">
+        </div>
+    </div>
+
+    <section class="bg-popLavender py-20 border-y-2 border-popBlack">
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="text-5xl font-title uppercase mb-8">Available On</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button
+                    class="bg-popBlack text-white px-6 py-3 font-bold neo-brutalism-border rounded-md hover:-translate-y-1 hover:bg-popPink hover:text-black transition">APPLE
+                    PODCASTS</button>
+                <button
+                    class="bg-popBlack text-white px-6 py-3 font-bold neo-brutalism-border rounded-md hover:-translate-y-1 hover:bg-popPink hover:text-black transition">SPOTIFY</button>
+                <button
+                    class="bg-popBlack text-white px-6 py-3 font-bold neo-brutalism-border rounded-md hover:-translate-y-1 hover:bg-popPink hover:text-black transition">STITCHER</button>
+                <button
+                    class="bg-popBlack text-white px-6 py-3 font-bold neo-brutalism-border rounded-md hover:-translate-y-1 hover:bg-popPink hover:text-black transition">GOOGLE
+                    PODCASTS</button>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12 px-6 mt-20">
+            <div class="w-full md:w-1/2" data-aos="fade-right">
+                <div class="aspect-square bg-blue-300 neo-brutalism-border rounded-2xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80"
+                        alt="Host" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2" data-aos="fade-left">
+                <h3 class="text-4xl font-title uppercase">Tim Rickman</h3>
+                <p class="text-xl mt-4 italic">"Making the best of pop out of popular."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-20 bg-popLavender">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-popBeige neo-brutalism-border p-0 overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-64 bg-purple-500 border-b-2 border-popBlack flex items-center justify-center p-8">
+                    <div
+                        class="w-full h-full border-4 border-black rounded-full flex items-center justify-center font-title text-4xl bg-blue-400">
+                        EP 1</div>
+                </div>
+                <div class="p-6">
+                    <p class="text-xs uppercase font-bold mb-2">Mar 22, 2023 • 1 min read</p>
+                    <h4 class="text-xl font-bold mb-4">Episode 1 - The Songs That Shaped Our Memories</h4>
+                    <p class="text-sm">Un viaggio attraverso le melodie che hanno definito una generazione.</p>
+                </div>
+            </div>
+
+            <div class="bg-popBeige neo-brutalism-border p-0 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-64 bg-yellow-400 border-b-2 border-popBlack flex items-center justify-center p-8">
+                    <div
+                        class="w-full h-full border-4 border-black rotate-3 flex items-center justify-center font-title text-4xl bg-green-400">
+                        EP 2</div>
+                </div>
+                <div class="p-6">
+                    <p class="text-xs uppercase font-bold mb-2">Mar 22, 2023 • 1 min read</p>
+                    <h4 class="text-xl font-bold mb-4">Episode 2 - Why Record Collectors Are The Worst</h4>
+                    <p class="text-sm">Un'analisi semiseria sul mondo del collezionismo in vinile.</p>
+                </div>
+            </div>
+
+            <div class="bg-popBeige neo-brutalism-border p-0 overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-64 bg-pink-400 border-b-2 border-popBlack flex items-center justify-center p-8 text-6xl">
+                    80's
+                </div>
+                <div class="p-6">
+                    <p class="text-xs uppercase font-bold mb-2">Mar 22, 2023 • 1 min read</p>
+                    <h4 class="text-xl font-bold mb-4">Episode 3 - Why the 1980s Were The Best</h4>
+                    <p class="text-sm">Sintetizzatori, capelli cotonati e rivoluzione digitale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-popBeige border-t-2 border-popBlack py-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div class="col-span-1">
+                <div class="text-4xl font-title uppercase leading-none mb-4">The<br>Pop<br>Show</div>
+                <div class="text-4xl">📻✨</div>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4 uppercase">Menu</h5>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Episodes</a></li>
+                    <li><a href="#" class="hover:underline">The Pop Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4 uppercase">Contact Me</h5>
+                <p class="mb-4 text-sm">info@mysite.com</p>
+                <div class="flex space-x-4">
+                    <span>FB</span><span>TW</span><span>YT</span><span>IG</span>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4 uppercase">Listen Now</h5>
+                <div class="flex flex-col gap-2">
+                    <button class="bg-popBlack text-white text-xs py-2 rounded neo-brutalism-border">APPLE
+                        PODCASTS</button>
+                    <div class="flex gap-2">
+                        <button
+                            class="bg-popBlack text-white text-xs py-2 px-4 rounded neo-brutalism-border w-1/2">SPOTIFY</button>
+                        <button
+                            class="bg-popBlack text-white text-xs py-2 px-4 rounded neo-brutalism-border w-1/2">STITCHER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-20 text-[10px] uppercase tracking-widest border-t border-black pt-8">
+            © 2026 by The Pop Show. Powered and secured by GitHub Pages.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+</body>
+
+</html>
